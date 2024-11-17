@@ -14,7 +14,7 @@ const QuestionItem = ({ question }) => {
         >
           {question.title}
         </a>
-      <div className="flex flex-row gap-3 mt-1 mb-5">
+      <div className="flex flex-col sm:flex-row gap-3 mt-1 mb-5">
         {question.tags.map((tag) => {
           return (
             <>
@@ -25,7 +25,7 @@ const QuestionItem = ({ question }) => {
           );
         })}
       </div>
-      <div className="flex justify-between mt-3">
+      <div className="flex flex-col items-center gap-2 sm:flex sm:flex-row  justify-between mt-3">
         <div className="flex flex-row gap-7 ">
           <div className="flex gap-2 flex-row items-center">
             <span className="text-orange-500">
