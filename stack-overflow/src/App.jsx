@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import MainContent from './components/MainContent';
+import Blog from './components/Blog';
 
 const App = () => {
   return (
@@ -14,13 +16,13 @@ const App = () => {
           </div>
 
           {/* Main Content */}
-          <div className="sm:col-span-7 border">
-            <h1>Main</h1>
+          <div className="sm:col-span-7 ">
+            <MainContent/>
           </div>
 
           {/* Blog Section */}
-          <div className="sm:col-span-3 border">
-            <h1>Blog</h1>
+          <div className="sm:col-span-3">
+            <Blog/>
           </div>
         </div>
       </div>
