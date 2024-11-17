@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="container my-4 px-4">
+      <div className="container my-4 px-4 mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-12 gap-4">
           {/* Sidebar */}
           <div className="sm:col-span-2 ">
