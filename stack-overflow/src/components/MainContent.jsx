@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import QuestionItem from "./QuestionItem";
 import axios from "axios";
 
-const MainContent = () => {
+const MainContent = ({searchTerm}) => {
   const [questions, setQuestions] = useState([]);
+  const [filquestions, setfilQuestions] = useState([]);
   const [filter, setFilter] = useState("activity");
   const [loading, setLoading] = useState(true); 
 
@@ -24,6 +25,7 @@ const MainContent = () => {
       
       setTimeout(() => {
         setQuestions(response.data.items);
+        setfilQuestions(response.data.items);
         setLoading(false); 
       }, 3000);
     } catch (error) {
@@ -35,6 +37,13 @@ const MainContent = () => {
   useEffect(() => {
     fetchQuestion();
   }, [filter]);
+
+  useEffect(() => {
+    const filtered = questions.filter((question) =>
+      question.title.toLowerCase().includes(searchTerm)
+    );
+    setfilQuestions(filtered);
+  }, [searchTerm, questions]);
 
   return (
     <div className="m-1">
@@ -116,8 +125,8 @@ const MainContent = () => {
               Processing...
             </button>
           </div>
-        ) : questions.length > 0 ? (
-          questions.map((question) => (
+        ) : filquestions.length > 0 ? (
+          filquestions.map((question) => (
             <div className="" key={question.question_id}>
               <QuestionItem question={question} />
             </div>
