@@ -32,16 +32,16 @@ const Blog = () => {
         <h2 className='font-semibold'>Hot meta post</h2>
         <div className="flex flex-col gap-2 mt-3">
             <div className="flex flex-row gap-3 ">
-                <span className='mt-1'>8</span>
-                <p className='text-sm text-gray-500 font-semibold '>Tags [driver] and [device-driver] appear to be reductant</p>
+                <span className='mt-1 font-semibold'>8</span>
+                <p className='text-sm text-gray-500 font-semibold mt-1 '>Tags [driver] and [device-driver] appear to be reductant</p>
             </div>
             <div className="flex flex-row gap-3 ">
-                <span className='mt-1'>27</span>
-                <p className='text-sm text-gray-500 font-semibold'>How to handle dupes where A is closed as dup of B but i have an answer that...</p>
+                <span className='mt-1 font-semibold'>27</span>
+                <p className='text-sm text-gray-500 font-semibold mt-1'>How to handle dupes where A is closed as dup of B but i have an answer that...</p>
             </div>
             <div className="flex flex-row gap-3 ">
-                <span className='mt-1'>27</span>
-                <p className='text-sm text-gray-500 font-semibold'>Ambiguous tag [containers]</p>
+                <span className='mt-1 font-semibold'>27</span>
+                <p className='text-sm text-gray-500 font-semibold mt-1'>Ambiguous tag [containers]</p>
             </div>
         </div>
         <br />

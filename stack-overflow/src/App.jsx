@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <Navbar setsearchTerm={setsearchTerm}/>
-      <div className=" my-4 px-4 mx-auto">
+      <div className=" my-4 px-1 mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-12 gap-4">
           <div className="sm:col-span-2 ">
             <Sidebar />
