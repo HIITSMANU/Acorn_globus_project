@@ -1,4 +1,4 @@
-# StackOverflow
+![image](https://github.com/user-attachments/assets/0c797ecd-0f4a-4a96-91e3-7eda52524eb8)# StackOverflow
 
 This project involves developing the frontend of a website inspired by Stack Overflow, with a key focus on the dynamic question section. The objective is to replicate a functional interface where users can interact with real-time questions fetched from an external API, such as the Stack Exchange API. The frontend will enable seamless filtering, searching, and categorizing of questions based on criteria like activity, votes, creation date, and more. 
 
@@ -72,10 +72,16 @@ To clone the project
 **Laptop Screen(Light mode)**
 ![image](https://github.com/user-attachments/assets/a2a24d69-b912-4c59-9a8a-bb4752592c22)
 
+**Laptop Screen(Dark mode)**
+![image](https://github.com/user-attachments/assets/b0d02c20-3ddb-4f7a-a169-20316623fdde)
 
 
 **Mobile Screen(Light mode)**
 ![image](https://github.com/user-attachments/assets/29e8c167-5162-48f3-adfe-b377b76a3534)
+
+
+**Mobile Screen(Dark mode)**
+![image](https://github.com/user-attachments/assets/5ad7e15e-f6ff-4e88-bbab-1c67e952c788)
 
 
 
@@ -99,6 +105,10 @@ To clone the project
 4. Scalable Architecture:
 
 - Modular components for easy maintenance and extension.
+
+5. ToggleTheme:
+
+- The website consists of both light and dark mode
 
 
 
