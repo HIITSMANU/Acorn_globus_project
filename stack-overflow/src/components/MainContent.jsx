@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import QuestionItem from "./QuestionItem";
 import axios from "axios";
+import { useTheme } from "../context/ThemeContext";
 
 const MainContent = ({searchTerm}) => {
   const [questions, setQuestions] = useState([]);
   const [filquestions, setfilQuestions] = useState([]);
   const [filter, setFilter] = useState("activity");
   const [loading, setLoading] = useState(true); 
+  const {theme} = useTheme()
 
   const fetchQuestion = async () => {
     setLoading(true); 
@@ -47,12 +49,12 @@ const MainContent = ({searchTerm}) => {
 
   return (
     <div className="m-1">
-      <h1 className="text-gray-500 font-semibold">Top Questions</h1>
+      <h1 className={`${theme == "light" ? "text-gray-500 font-semibold":"text-white font-semibold"}`}>Top Questions</h1>
       <br />
       <div className="flex flex-col sm:flex sm:justify-between sm:flex-row">
         <div className="flex flex-col gap-5 sm:flex sm:flex-row">
           <button
-            className="px-6 border border-gray-500 bg-orange-500 rounded-2xl text-sm font-semibold text-white h-8 mt-1"
+            className="text-gray-500 px-6 border border-gray-500 hover:bg-orange-500 hover:text-white rounded-2xl text-sm font-semibold  h-8 mt-1"
             onClick={() => setFilter("activity")}
           >
             Activity
