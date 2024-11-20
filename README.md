@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0c797ecd-0f4a-4a96-91e3-7eda52524eb8)# StackOverflow
+# StackOverflow
 
 This project involves developing the frontend of a website inspired by Stack Overflow, with a key focus on the dynamic question section. The objective is to replicate a functional interface where users can interact with real-time questions fetched from an external API, such as the Stack Exchange API. The frontend will enable seamless filtering, searching, and categorizing of questions based on criteria like activity, votes, creation date, and more. 
 
