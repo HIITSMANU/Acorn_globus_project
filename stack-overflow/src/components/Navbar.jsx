@@ -33,7 +33,7 @@ export default function Navbar({ setsearchTerm }) {
   };
   const {theme} = useTheme()
   return (
-    <Disclosure as="nav" className={`${theme == "light" ? "bg-white-800" : "bg-gray-600"} border rounded-lg`}>
+    <Disclosure as="nav" className={`${theme == "light" ? "bg-white-800" : "bg-gray-600"} border rounded-md`}>
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-1">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
